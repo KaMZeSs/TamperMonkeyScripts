@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Add Shikimori Rating to Anilibria
 // @namespace    https://github.com/KaMZeSs/TamperMonkeyScripts
-// @version      0.2
+// @version      0.2.1
 // @description  Add Shikimori rating to Anilibria anime pages
 // @author       KaMZeSs
 // @match        https://anilibria.top/*
