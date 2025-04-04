@@ -221,10 +221,9 @@
     }
 
     // MutationObserver для отслеживания изменений
-    const observer = new MutationObserver((mutations) => {
+    const observer = new MutationObserver(() => {
         execute();
     });
 
-    // Наблюдаем за изменениями в элементе <title>
-    observer.observe(document.querySelector('title'), { childList: true });
+    observer.observe(document.head, { childList: true, subtree: true });
 })();
