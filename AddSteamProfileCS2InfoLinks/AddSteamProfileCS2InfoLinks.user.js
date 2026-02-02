@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Steam Profile CS2 Info Links
 // @namespace    https://github.com/KaMZeSs/TamperMonkeyScripts
-// @version      0.1
-// @description  Добавляет ссылки на CS2 профили (leetify, csstats) в профиле Steam
+// @version      0.2
+// @description  Добавляет ссылки на CS2 профили (leetify, csstats, dotabuff) в профиле Steam
 // @author       KaMZeSs
 // @match        https://steamcommunity.com/id/*
 // @match        https://steamcommunity.com/profiles/*
@@ -43,8 +43,16 @@
         csstatsLink.target = '_blank';
         csstatsLink.textContent = 'CSStats';
 
+        const dotabuffLink = document.createElement('a');
+        dotabuffLink.href = `https://ru.dotabuff.com/players/${steamID64}`;
+        dotabuffLink.target = '_blank';
+        dotabuffLink.textContent = 'CSStats';
+
+        
+
         linkList.appendChild(leetifyLink);
         linkList.appendChild(csstatsLink);
+        linkList.appendChild(dotabuffLink);
 
         container.appendChild(header);
         container.appendChild(linkList);
