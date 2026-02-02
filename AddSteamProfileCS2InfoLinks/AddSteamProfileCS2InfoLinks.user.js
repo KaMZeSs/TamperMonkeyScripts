@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam Profile CS2 Info Links
 // @namespace    https://github.com/KaMZeSs/TamperMonkeyScripts
-// @version      0.2.1
+// @version      0.3
 // @description  Добавляет ссылки на CS2 профили (leetify, csstats, dotabuff) в профиле Steam
 // @author       KaMZeSs
 // @match        https://steamcommunity.com/id/*
